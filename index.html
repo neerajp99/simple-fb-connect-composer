@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="drupalgci">
+    <meta name="author" content="Neeraj Pandey">
+    <title>DRUPAL | GCI 16</title>
+    <!-- FONTS HERE -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--  CSS HERE -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="home">
+        <div class="intro">
+            <img src="neer.jpg" class="img1">
+            <h1>Neeraj Pandey</h1>
+            <hr class="noshade">
+            <br>
+            <ul class="ul1">
+                <li>January 12, 2017</li>
+                <li>Open-Source Development</li>
+                <li>#google #drupal</li>
+            </ul>
+            <!-- 
+            <div class="arrow bounce"></div> -->
+            <ul class="list-inline ">
+                <li>
+                    <a href="https://facebook.com/neerajpandey99"> <i class="fa fa-facebook fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/neerajp99"> <i class="fa fa-twitter fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/neerajp99"> <i class="fa fa-linkedin fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="https://github.com/neerajp99"> <i class="fa fa-github fa-2x"></i> </a>
+                </li>
+                <li>
+                    <a href="mailto:neerajp1999@gmail.com"> <i class="fa fa-envelope fa-2x"> </i> </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right" id="right">
+            <div class="hello">
+                <h>DRUPAL8 MODULE WITH DEPENDENCY ON EXTERNAL LIBRARY</h>
+                <img src="3.png" class="res">
+                <br>
+                <br>
+                <h2 class="text1">SIMPLE FB CONNECT</h2>
+                <hr class="noshade1">
+                <br>
+                <p class="refrain">
+                    Simple FB Connect is a Drupal Module which allows the users to Login and Register to your Drupal site with their Facebook Account.
+                    <br>
+                    <a href="https://www.drupal.org/project/simple_fb_connect">View</a> Project.
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <h2 class="text1">COMPOSER</h2>
+                <hr class="noshade1" id="gonna">
+                <br>
+                <p class="refrain">
+                    Composer is an application-level package manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries. It was developed by <a href="https://github.com/naderman">Nils Adermann</a> and <a href="https://github.com/Seldaek">Jordi Boggiano</a>, who continue to manage the project.
+                    <br> Composer Official Site : <span><a href="https://getcomposer.org/">https://getcomposer.org/</a></span>.
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <br>
+                <br>
+                <h2 class="text1">- INSTALLING COMPOSER ON UBUNTU </h2>
+                <br>
+                <p class="refrain">
+                    <span>1. </span> Update the package manager cache by using the command:
+                    <br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp; <span>$ sudo apt-get update</span>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="4.png" class="res">
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>2. </span> Now install the dependencies for running and installing Composer using the command :
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; <span>$ sudo apt-get install curl php5-cli git</span>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="5.png" class="res">
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>3. </span>Now downlaod Composer using the following command:
+                    <br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>$ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer</span>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="6.png" class="res">
+                <br>
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>4. </span> To check if Composer is working fine, use the command <span>$ composer </span> and if it shows the same as the image then it works fine.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="7.png" class="res">
+                <br>
+                <br>
+                <br>
+                <h2 class="text1">- INSTALLING SIMPLE FB CONNECT MODULE </h2>
+                <br>
+                <p class="refrain">
+                    <span>1. </span> Go to Drupal root directory and use the below comamnd to inform Composer that we want to use packages.drupal.org/8 as a package repository:
+                    <br>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp; <span>$ composer config repositories.drupal composer https://packages.drupal.org/8</span>
+                </p>
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>2. </span> Downlaod the latest version of 8.x-3.0 release of Simple FB Connect by using the following command:
+                    <br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; <span>$ composer require "drupal/simple_fb_connect:~3.0"</span>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="1.png" class="res">
+                <br>
+                <br>
+                <h2 class="text1">- ENABLING SIMPLE FB CONNECT MODULE </h2>
+                <br>
+                <p class="refrain">
+                    <span>1. </span> Go to <span>/admin/modules</span> and install the Simple FB Connect Module:
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="8.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>2. </span>Now go to Simple FB Module settings <span> /admin/config/people/simple-fb-connect</span>
+                    <br>
+                    <br> Here we will find Valid OAuth redirect URIs, App Domains and Site URLs for your Facebook App settings.
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="9.png" class="res">
+                <br>
+                <br>
+                <h2 class="text1">- CREATING A FACEBOOK APPLICATION</h2>
+                <br>
+                <p class="refrain">
+                    <span>1. </span> Go to <span>https://developers.facebook.com/apps</span> and click on <span>Add a New App </span>. A window will pop-up, fill in the details and create the App ID.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="10.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>2. </span>You will be directed to the dashboard, click on Get Started button on <span>Facebook Login Tab</span>. After that enter the <span>Valid OAuth redirect URIs</span> from the module settings to the Valid OAuth redirect URIs Field in the Facebook login page.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="11.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>3. </span>Go to <span>Basic Settings</span> and enter the <span>Website URL </span>and <span>App Domain</span>.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="12.png" class="res">
+                <br>
+                <br>
+                <p class="refrain">
+                    <span>4. </span>Go to <span>App Review</span> and make the app public if you want other users can also login with their facebook accounts.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="13.png" class="res">
+                <br>
+                <br>
+                <h2 class="text1">- UDATING THE SIMPLE FB CONNECT MODULE </h2>
+                <br>
+                <p class="refrain">
+                    <span>1. </span> Go to <span>admin/config/people/simple-fb-connect </span> and add the Application ID, App Secret and API Verion of the Facebook Application from the Facebook Application Dasbaord.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <br>
+                <img src="14.png" class="res">
+                <br><br>
+                <img src="15.png" class="res">
+                <br>
+                <br>
+               
+                 <p class="refrain">
+                   
+                   - We have now installed the module. To check if it works properly or not, go to the Website and while Login, we will notice "Facebook Login" option.</p>
+                   <br><br><br><br>
+                <img src="16.png" class="res">
+                <br>
+
+                <br>
+                <p class="refrain">
+                    <span># So, in this tutorial we installed Simple FB Connect Module with dependency on External Libraries using Composer .</span>
+                </p>
+                <div class="frame52"></div>
+               
+                
+ 
+
+
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+
+</html>
